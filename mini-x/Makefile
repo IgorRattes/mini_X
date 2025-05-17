@@ -10,7 +10,8 @@ CC = gcc
 # Flags para compilação
 # -Wall ativa todos os avisos importantes
 # -g inclui informações para depuração (debug)
-CFLAGS = -Wall -g
+# -Iinclude indica onde encontrar os headers (.h)
+CFLAGS = -Wall -g -Iinclude
 
 # Flags para linkedição (se precisar adicionar bibliotecas, por exemplo)
 # Não foi necessário incluir nenhuma biblioteca extra ou flag de linkedição
@@ -21,17 +22,17 @@ SERVER = servidor
 CLIENT_SEND = cliente_envio
 CLIENT_RECV = cliente_exibicao
 
-# Arquivos fonte correspondentes a cada programa
-SERVER_SRC = 1_servidor.c 4_util.c
-CLIENT_SEND_SRC = 2_cliente_envio.c 4_util.c
-CLIENT_RECV_SRC = 3_cliente_exibicao.c 4_util.c
+# Arquivos fonte correspondentes a cada programa (caminho relativo na pasta src)
+SERVER_SRC = src/1_servidor.c src/4_util.c
+CLIENT_SEND_SRC = src/2_cliente_envio.c src/4_util.c
+CLIENT_RECV_SRC = src/3_cliente_exibicao.c src/4_util.c
 
 # Compila todos os programas (servidor e clientes)
 all: $(SERVER) $(CLIENT_SEND) $(CLIENT_RECV)
 
 # O executável servidor depende dos arquivos fonte do servidor
 $(SERVER): $(SERVER_SRC)
-	 # Compila o servidor usando os arquivos fonte
+	# Compila o servidor usando os arquivos fonte
 	$(CC) $(CFLAGS) -o $@ $^ $(LDFLAGS)
 
 # Executável cliente envio depende dos arquivos fonte dele
@@ -50,4 +51,3 @@ clean:
 
 # Declara que all e clean são comandos, não arquivos
 .PHONY: all clean
-# Reg
