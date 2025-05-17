@@ -28,15 +28,15 @@ Do ponto de vista didático, o foco está na aplicação de conceitos de program
 
 # Arquitetura do Sistema
 
-![Visão Geral do Sistema](../Arq_Sistema/Visao_Geral_Sistema.png)
-![Fluxograma Servidor](../Arq_Sistema/Fluxograma_Servidor.png)
-![Fluxograma Cliente Enviador](../Arq_Sistema/Fluxograma_Cliente_Enviador.png)
-![Fluxograma Cliente Exibidor](../Arq_Sistema/Fluxograma_Cliente_Exibidor.png)
+![Visão Geral do Sistema](Arq_Sistema/Visao_Geral_Sistema.png)
+![Fluxograma Servidor](Arq_Sistema/Fluxograma_Servidor.png)
+![Fluxograma Cliente Enviador](Arq_Sistema/Fluxograma_Cliente_Enviador.png)
+![Fluxograma Cliente Exibidor](Arq_Sistema/Fluxograma_Cliente_Exibidor.png)
 
 # Apresentação
 
 <ol>
-<li><a href="../Arq_Sistema"> Arquitetura do Sistema</a></li>
+<li><a href="Arq_Sistema"> Arquitetura do Sistema</a></li>
 <li><a href="Apresentacao/Sprint 2/Sprint_2_Sistemas_Embarcados"> Sprint 2</a></li>
 <li><a href="Apresentacao/Sprint 3/Sprint3-SistemasEmbarcados"> Sprint 3</a></li>
 <li><a href="Apresentacao/Videos_fotos/Circuirto-Embarcados.jpeg"> Fotos do Projeto</a></li>
