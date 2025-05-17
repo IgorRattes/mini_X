@@ -1,2 +1,44 @@
-# mini_X
-Sistema de mensagens curtas (mini-X) em arquitetura multi-servidor. Foca no uso de programação orientada a eventos com select e temporização por sinais, com fins didáticos e experimentais.
+# Mini-X
+
+`CAMPUS/UNIDADE: Puc Minas Campus Coração Eucaristico`
+
+`CURSOÇ Engenharia de Computação 5º Semestre`
+
+`SEMESTREÇ 1º Semestre - 2025`
+
+`DISCIPLINA: Redes I`
+
+
+## Integrantes
+
+* Chrystian Henrique Fonseca de Souza
+* Igor Gomes Silva Rattes
+
+## Orientador
+
+* Ricardo Carlini Sperandio
+
+## Resumo
+
+Este projeto tem como objetivo o desenvolvimento de um sistema de envio de mensagens curtas — uma espécie de mini-X (antigo Twitter) — operando em um ambiente multi-servidor.
+
+Do ponto de vista funcional, o sistema permite a comunicação entre usuários por meio de mensagens curtas, simulando uma rede social distribuída.
+
+Do ponto de vista didático, o foco está na aplicação de conceitos de programação orientada a eventos, com ênfase no uso da primitiva select e na temporização baseada em sinais, promovendo o domínio dessas técnicas em ambientes concorrentes.
+
+# Apresentação
+
+<ol>
+<li><a href="Apresentacao/Sprint 1/Sprint_1_Forca_Digital_Sistemas_Embarcados"> Sprint 1</a></li>
+<li><a href="Apresentacao/Sprint 2/Sprint_2_Sistemas_Embarcados"> Sprint 2</a></li>
+<li><a href="Apresentacao/Sprint 3/Sprint3-SistemasEmbarcados"> Sprint 3</a></li>
+<li><a href="Apresentacao/Videos_fotos/Circuirto-Embarcados.jpeg"> Fotos do Projeto</a></li>
+<li><a href=https://www.youtube.com/watch?v=4z9Ac5fo660> Vídeo do Projeto</a></li>
+</ol>
+
+# Documentação
+
+<ol>
+<li><a href="Documentacao/DocumentaçãoSistemasEmbarcados.pdf"> Documentação</a></li>
+</ol>
+
