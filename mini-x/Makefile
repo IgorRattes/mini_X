@@ -11,7 +11,7 @@ CC = gcc
 # -Wall ativa todos os avisos importantes
 # -g inclui informações para depuração (debug)
 # -Iinclude indica onde encontrar os headers (.h)
-CFLAGS = -Wall -g -Iinclude
+CFLAGS = -Wall -g -include
 
 # Flags para linkedição (se precisar adicionar bibliotecas, por exemplo)
 # Não foi necessário incluir nenhuma biblioteca extra ou flag de linkedição
