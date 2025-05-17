@@ -28,7 +28,7 @@ Do ponto de vista didático, o foco está na aplicação de conceitos de program
 
 # Arquitetura do Sistema
 
-![Visão Geral do Sistema](../Arq_Sistema/Visao_Geral.png)
+![Visão Geral do Sistema](../Arq_Sistema/Visao_Geral_Sistema.png)
 ![Fluxograma Servidor](../Arq_Sistema/Fluxograma_Servidor.png)
 ![Fluxograma Cliente Enviador](../Arq_Sistema/Fluxograma_Cliente_Enviador.png)
 ![Fluxograma Cliente Exibidor](../Arq_Sistema/Fluxograma_Cliente_Exibidor.png)
