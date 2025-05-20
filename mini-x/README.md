@@ -34,6 +34,13 @@ Do ponto de vista didático, o foco está na aplicação de conceitos de program
 ![Fluxograma Cliente Enviador](../Arq_Sistema/Fluxograma_Cliente_Enviador.png)
 ![Fluxograma Cliente Exibidor](../Arq_Sistema/Fluxograma_Cliente_Exibidor.png)
 
+# Modo de Utilização
+
+1. - Use o comando abaixo para compilar todos os programas (necessário make e gcc):
+2. - Inicie o servidor  = ./servidor <PORTA>
+3. - Inicie um ou mais clientes de exibição  = ./cliente_exibicao <ID_CLIENTE>
+4. - Inicie um ou mais clientes de Envio  = ./cliente_envio <ID_CLIENTE> <IP_SERVIDOR> <PORTA>
+
 # Apresentação
 
 <ol>
@@ -43,6 +50,7 @@ Do ponto de vista didático, o foco está na aplicação de conceitos de program
 <li><a href="Apresentacao/Videos_fotos/Circuirto-Embarcados.jpeg"> Fotos do Projeto</a></li>
 <li><a href=https://www.youtube.com/watch?v=4z9Ac5fo660> Vídeo do Projeto</a></li>
 </ol>
+
 
 # Documentação
 
