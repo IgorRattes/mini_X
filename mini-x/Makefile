@@ -1,53 +1,50 @@
 # Makefile para o projeto mini-X
-# Serve para facilitar a compilação dos programas
-# Define regras para compilar o servidor e os dois clientes
-# Usando o comando 'make' ele compila tudo automaticamente
-# E com 'make clean' remove os executáveis gerados
+# Responsável por compilar o servidor e os dois clientes (envio e exibição)
+# Comando 'make' compila todos os binários
+# Comando 'make clean' remove os executáveis gerados
 
-# Definição do compilador a ser usado
+# Compilador a ser utilizado
 CC = gcc
 
-# Flags para compilação
-# -Wall ativa todos os avisos importantes
-# -g inclui informações para depuração (debug)
-# -Iinclude indica onde encontrar os headers (.h)
-CFLAGS = -Wall -g -include
+# Flags de compilação:
+# -Wall: ativa todos os avisos importantes
+# -g: inclui informações de debug
+# -Iinclude: adiciona o diretório 'include' à lista de paths de headers
+CFLAGS = -Wall -g -Iinclude
 
-# Flags para linkedição (se precisar adicionar bibliotecas, por exemplo)
-# Não foi necessário incluir nenhuma biblioteca extra ou flag de linkedição
-LDFLAGS =
+# Flags de linkedição (vazio por enquanto, pode adicionar libs aqui se necessário)
+LDFLAGS = -lws2_32
 
-# Nomes dos executáveis que serão gerados
+# Nomes dos executáveis a serem gerados
 SERVER = servidor
 CLIENT_SEND = cliente_envio
 CLIENT_RECV = cliente_exibicao
 
-# Arquivos fonte correspondentes a cada programa (caminho relativo na pasta src)
+# Arquivos-fonte utilizados por cada executável
 SERVER_SRC = src/1_servidor.c src/4_util.c
 CLIENT_SEND_SRC = src/2_cliente_envio.c src/4_util.c
 CLIENT_RECV_SRC = src/3_cliente_exibicao.c src/4_util.c
 
-# Compila todos os programas (servidor e clientes)
+# Regra principal: compila todos os programas
 all: $(SERVER) $(CLIENT_SEND) $(CLIENT_RECV)
 
-# O executável servidor depende dos arquivos fonte do servidor
+# Regras de compilação individuais para cada binário
+
+# Compila o servidor
 $(SERVER): $(SERVER_SRC)
-	# Compila o servidor usando os arquivos fonte
 	$(CC) $(CFLAGS) -o $@ $^ $(LDFLAGS)
 
-# Executável cliente envio depende dos arquivos fonte dele
+# Compila o cliente de envio
 $(CLIENT_SEND): $(CLIENT_SEND_SRC)
-	# Compila o cliente de envio
 	$(CC) $(CFLAGS) -o $@ $^ $(LDFLAGS)
 
-# Executável cliente exibição depende dos arquivos fonte dele
+# Compila o cliente de exibição
 $(CLIENT_RECV): $(CLIENT_RECV_SRC)
-	# Compila o cliente de exibição
 	$(CC) $(CFLAGS) -o $@ $^ $(LDFLAGS)
 
-# Comando para apagar executáveis e arquivos objeto
+# Remove arquivos gerados na compilação
 clean:
 	rm -f $(SERVER) $(CLIENT_SEND) $(CLIENT_RECV) *.o
 
-# Declara que all e clean são comandos, não arquivos
+# Indica que 'all' e 'clean' não são arquivos
 .PHONY: all clean
