@@ -13,6 +13,7 @@
 
 * Chrystian Henrique Fonseca de Souza
 * Igor Gomes Silva Rattes
+* Lucas Bretz Araujo Petinga
 
 ## Orientador
 
